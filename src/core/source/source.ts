@@ -226,7 +226,7 @@ export class Source implements ISource{
       let uniqueObj = {};
       let uniqueSrc = [];
       let promiseArray = [];
-      iApp.getAsList('presetconfig').then(jsonArr => {
+      iApp.getAsList('sceneconfig').then(jsonArr => {
         for (var i = 0; i < jsonArr.length - 1; i++) {
           allJson = allJson.concat(jsonArr[i].children)
         }
